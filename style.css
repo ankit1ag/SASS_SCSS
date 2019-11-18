@@ -1,0 +1,111 @@
+body {
+  background-color: chocolate; }
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+  nav ul li {
+    display: inline; }
+    nav ul li a {
+      text-decoration: none; }
+
+h4, h5 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  background-color: blue; }
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+  background-color: lawngreen; }
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px; }
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px; }
+
+.element-5 {
+  width: 50px;
+  background-color: yellowgreen;
+  height: 20px; }
+
+.element-4 {
+  width: 40px;
+  background-color: yellowgreen;
+  height: 20px; }
+
+.element-3 {
+  width: 30px;
+  background-color: yellowgreen;
+  height: 20px; }
+
+.element-2 {
+  width: 20px;
+  background-color: yellowgreen;
+  height: 20px; }
+
+.element-1 {
+  width: 10px;
+  background-color: yellowgreen;
+  height: 20px; }
+
+.elem-1 {
+  background-color: yellowgreen;
+  height: 20px;
+  width: 10px; }
+
+.elem-2 {
+  background-color: yellowgreen;
+  height: 20px;
+  width: 20px; }
+
+.elem-3 {
+  background-color: yellowgreen;
+  height: 20px;
+  width: 30px; }
+
+.elem-4 {
+  background-color: yellowgreen;
+  height: 20px;
+  width: 40px; }
+
+.elem-5 {
+  background-color: yellowgreen;
+  height: 20px;
+  width: 50px; }
+
+.stuff-1 {
+  background-color: #111;
+  width: 100px;
+  height: 20px; }
+
+.stuff-2 {
+  background-color: #222;
+  width: 100px;
+  height: 20px; }
+
+.stuff-3 {
+  background-color: #333;
+  width: 100px;
+  height: 20px; }
+
+.stuff-4 {
+  background-color: #444;
+  width: 100px;
+  height: 20px; }
+
+.stuff-5 {
+  background-color: #555;
+  width: 100px;
+  height: 20px; }

@@ -1,0 +1,86 @@
+
+@import 'partials/variables','partials/mixins','partials/functions';
+
+body{
+    @if $theme == theme1{
+        background-color:$theme1-background;
+    }
+    @else if $theme == theme2{
+        background-color:$theme2-background;
+    }
+    @else{
+    background-color: chocolate;
+    }
+}
+
+
+nav{
+    ul{
+       margin:0px;
+       padding:0px;
+       list-style: none; 
+        li{
+            display: inline;
+            a{
+                  text-decoration: none;  
+            }
+        }
+    }
+}
+
+
+%header{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    background-color: blue;
+}
+
+
+h1{
+@include headerDec();
+background-color: lawngreen;
+}
+h2{
+    @include headerDec();    
+}
+h3{
+    @include headerDec();
+
+}
+h4{
+    //@include headerDec();
+    @extend %header;
+}
+h5{
+   // @include headerDec();
+   @extend %header;
+}
+
+$index : 5;
+@while $index >0{
+	.element-#{$index}{
+  width:10px*$index;
+  background-color: yellowgreen;
+  height: 20px;    
+	}
+	$index:$index - 1;
+}
+
+@for $i from 1 through 5{
+	.elem-#{$i}{
+    background-color: yellowgreen; 
+    height: 20px;    	
+	  width:10px*$i;
+}
+}
+
+$colors-list: #111 #222 #333 #444 #555;
+@each $current-color in $colors-list {
+    $i: index($colors-list, $current-color);
+    .stuff-#{$i} { 
+        background-color: $current-color;
+        width: 100px;
+        height: 20px;
+    }
+  }
